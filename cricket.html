@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket bat Animation</title>
+    <link rel="shortcut icon"
+        href="https://t3.ftcdn.net/jpg/02/02/27/68/360_F_202276862_Bl20MC12CxPZAr781Sctf37otHIwSvBU.jpg"
+        type="image/x-icon">
+    <style>
+        .bat img {
+            width: 30%;
+        }
+
+        .play-ground {
+            width: 800px;
+            height: 470px;
+            border: 2px solid black;
+        }
+
+        .bat {
+            transition: transform .2s ease-in;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            margin-top: 45px;
+            position: relative;
+            left: 403px;
+            transition: transform .4s ease-out .25s;
+        }
+
+        .play-ground:hover .bat {
+            transform: rotate(-45deg);
+            transform-origin: top;
+        }
+
+        .play-ground:hover .ball {
+            transform: translate(400px, -150px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Wanna Hit a sixer ??? Just HOVER your Mouse to the box!!</h1>
+    <div class="play-ground">
+        <div class="bat">
+            <img src="bat.png" alt="">
+        </div>
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
